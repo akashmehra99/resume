@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 400px) {
   .display-inline-box {
-    margin-top: 0px;
+    margin-top: 15px;
   }
 }
 @media print {
@@ -34,56 +34,23 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .header a {
-    color: black !important;
-  }
+  
   .print {
-    display: none !important;
-  }
-  .qr-code {
-    display: block !important;
-  }
-  .qr-code img {
-    height: 100px;
-    width: 100px;
-  }
-  @page: first{
-    margin: 6mm 1cm 2cm 1cm;
+    display: none!important;
   }
   @page {
-    margin: 2cm 1cm 2cm 1cm;
+    margin: 4mm;
   }
-  .ca-groups {
-    margin: 0 0 0 40px;
-  }
-  .summary {
-    margin-left: 20px;
-  }
-}
-
-.qr-code {
-  display: none;
 }
 
 .body-center {
   font-weight: 400;
-  color: white;
+  color: #4a4a4a;
 }
 
 body {
-  background: #525252; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #3d72b4,
-    #525252
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #3d72b4,
-    #525252
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #212529;
   height: 100%;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .icon-padding {
@@ -95,48 +62,53 @@ body {
 }
 
 .company {
-  padding-left: 15px;
-  text-decoration: underline;
+  font-weight: 600;
 }
 .header {
   padding: 20px 20px 0px 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .header a {
-  color: white;
+  color: #4a4a4a;
 }
 
 .default-padding {
-  padding: 5px 20px 0;
+  padding: 5px 20px 0 20px;
 }
 .contact-info i {
   margin-right: 10px;
 }
 .div-box {
-  border-radius: 7px;
+  display: flex;
   width: fit-content;
-  padding: 5px 10px;
-  color: white;
-  float: left;
-  margin: 5px;
-  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: #FFFFFF;
+  height: 30px;
   font-size: 15px;
   letter-spacing: normal;
-  border: 2px solid white;
-  background: #525252;
-  background: -webkit-linear-gradient(to right, #3d72b4, #525252);
-  background: linear-gradient(to right, #3d72b4, #525252);
+  border: 2px solid #4a4a4a;
+  background: white;
+  padding: 16px 10px 12px 10px;
+  margin-bottom: 5px;
+  background: #4a4a4a;
 }
 
 .display-inline {
-  margin-top: 0;
+  margin-top: 5px;
 }
 
-.display-inline-box {
-  font-weight: 700;
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  align-content: center;
 }
 
 .width-max {
@@ -148,10 +120,13 @@ body {
   padding: 0;
 }
 
-.ca-groups {
-  margin: 0 0 0 30px;
+.info {
+  flex: 5;
+}
+.contact-info {
+  flex: 2;
 }
 
-.summary {
-  margin-left: 15px;
+.ca-groups {
+  margin: 0 0 0 30px;
 }
