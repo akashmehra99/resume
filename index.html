@@ -14,153 +14,192 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+  <!-- Structured Data for ATS -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Akash Mehra",
+    "email": "akash.mehra99@gmail.com",
+    "telephone": "+91 9457836151",
+    "url": "https://github.com/akashmehra99",
+    "sameAs": [
+      "https://www.linkedin.com/in/akash-mehra-980a6181/",
+      "https://github.com/akashmehra99"
+    ],
+    "jobTitle": "Senior Full Stack Engineer",
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "SRM University"
+    },
+    "knowsAbout": [
+      "React", "Angular", "Vue", "Node.js", "JavaScript", "TypeScript", 
+      "AWS", "Docker", "MongoDB", "SQL", "Webpack", "Jest", "Cypress", "Go"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <div class="body-center">
+  <div class="body-center" itemscope itemtype="http://schema.org/Person">
     <div class="skills-contact-section">
       <div class="default-padding">
         <div class="display-inline">
-          <h3 name="Akash Mehra">Akash Mehra</h1>
+          <h1 id="full-name" itemprop="name" data-field="fullName">Akash Mehra</h1>
         </div>
-        <div>
-          <a name="email" href="mailto: akash.mehra99@gmail.com">
+        <div class="contact-info" itemscope itemtype="http://schema.org/ContactPoint">
+          <a id="email" itemprop="email" data-field="email" href="mailto: akash.mehra99@gmail.com">
             <i class="far fa-envelope-open"></i>akash.mehra99@gmail.com</a>
         </div>
-        <div>
-          <a name="phone" href="tel:+919457836151"><i class="fas fa-mobile-alt"></i> +91 9457836151</a>
+        <div class="contact-info">
+          <a id="phone" itemprop="telephone" data-field="phone" href="tel:+919457836151"><i
+              class="fas fa-mobile-alt"></i>
+            +91 9457836151</a>
         </div>
-        <div>
-          <a name="githun-username" href="https://github.com/akashmehra99"><i class="fab fa-github"></i>akashmehra99</a>
+        <div class="contact-info">
+          <a id="github" data-field="github" href="https://github.com/akashmehra99"><i
+              class="fab fa-github"></i>akashmehra99</a>
         </div>
-        <div>
-          <a href="https://www.linkedin.com/in/akash-mehra-980a6181/" target="_blank"><i
-              class="fab fa-linkedin"></i>Akash Mehra</a>
+        <div class="contact-info">
+          <a id="linkedin" itemprop="sameAs" data-field="linkedin"
+            href="https://www.linkedin.com/in/akash-mehra-980a6181/" target="_blank"><i
+              class="fab fa-linkedin"></i>Akash
+            Mehra</a>
         </div>
         <div class="print">
           <a href="#" onclick="window.print()"><i class="fas fa-print"></i>Print</a>
         </div>
       </div>
       <!-- Skills -->
-      <div class="default-padding">
-        <h4><i class="far fa-chart-bar icon-padding"></i>Skills</h4>
-        <div class="row">
-          <div class="points-padding display-inline skills">
-            <h5 class="display-inline-box">
+      <div class="default-padding" id="skills-section" data-section="skills">
+        <h4 id="skills-heading" data-field="skillsHeading"><i class="far fa-chart-bar icon-padding"></i>Skills</h4>
+        <div class="row" itemprop="knowsAbout">
+          <div class="points-padding display-inline skills" data-skill-category="frontend">
+            <h5 class="display-inline-box" data-field="skillCategory">
               <i class="fas fa-caret-right icon-padding"></i>Frontend Development
             </h5>
             <div class="points-padding display-inline">
               <ul>
-                <li><b>Frameworks & Libraries:</b> React, Angular, Backbone, Vue, Storybook, Redux, Mobx, Ionic,
-                  Electron,
-                  React
-                  Native, Handlebars</li>
-                <li><b>UI Design Systems:</b> Material UI, Chakra UI, Angular Material, Bootstrap</li>
-                <li><b>Frontend Languages:</b> TypeScript, JavaScript (ES6), JQuery, HTML, CSS/LESS/SCSS</li>
+                <li data-skill-type="frameworks"><b>Frameworks & Libraries:</b> <span data-field="skills">React,
+                    Angular,
+                    Backbone, Vue, Storybook, Redux, Mobx, Ionic,
+                    Electron,
+                    React
+                    Native, Handlebars</span></li>
+                <li data-skill-type="ui-systems"><b>UI Design Systems:</b> <span data-field="skills">Material UI, Chakra
+                    UI, Angular Material, Bootstrap</span></li>
+                <li data-skill-type="languages"><b>Frontend Languages:</b> <span data-field="skills">TypeScript,
+                    JavaScript (ES6), JQuery, HTML, CSS/LESS/SCSS</span></li>
               </ul>
             </div>
           </div>
-          <div class="points-padding display-inline skills">
-            <h5 class="display-inline-box">
+          <div class="points-padding display-inline skills" data-skill-category="backend">
+            <h5 class="display-inline-box" data-field="skillCategory">
               <i class="fas fa-caret-right icon-padding"></i>Backend Development
             </h5>
             <div class="points-padding display-inline">
               <ul>
-                <li><b>Programming Languages:</b> Node.js, Go, Java</li>
-                <li><b>Frameworks & Technologies:</b> Express, Nest, Spring Boot, Microservices</li>
+                <li data-skill-type="languages"><b>Programming Languages:</b> <span data-field="skills">Node.js, Go,
+                    Java</span></li>
+                <li data-skill-type="frameworks"><b>Frameworks & Technologies:</b> <span data-field="skills">Express,
+                    Nest, Spring Boot, Microservices</span></li>
               </ul>
             </div>
           </div>
-          <div class="points-padding display-inline skills">
-            <h5 class="display-inline-box">
+          <div class="points-padding display-inline skills" data-skill-category="database">
+            <h5 class="display-inline-box" data-field="skillCategory">
               <i class="fas fa-caret-right icon-padding"></i>Database Management
             </h5>
             <div class="points-padding display-inline">
               <ul>
-                <li>MongoDB, Redis, SQL</li>
+                <li data-skill-type="databases"><span data-field="skills">MongoDB, Redis, SQL</span></li>
               </ul>
             </div>
           </div>
-          <div class="points-padding display-inline skills">
-            <h5 class="display-inline-box">
+          <div class="points-padding display-inline skills" data-skill-category="build-tools">
+            <h5 class="display-inline-box" data-field="skillCategory">
               <i class="fas fa-caret-right icon-padding"></i>Build Tools & Bundlers
             </h5>
             <div class="points-padding display-inline">
               <ul>
-                <li>Webpack, Rollup, Parcel, Babel</li>
+                <li data-skill-type="build-tools"><span data-field="skills">Webpack, Rollup, Parcel, Babel</span></li>
               </ul>
             </div>
           </div>
-          <div class="points-padding display-inline skills">
-            <h5 class="display-inline-box">
-              <i class="fas fa-caret-right icon-padding"></i>Build Tools & Bundlers
+          <div class="points-padding display-inline skills" data-skill-category="testing-analytics">
+            <h5 class="display-inline-box" data-field="skillCategory">
+              <i class="fas fa-caret-right icon-padding"></i>Testing & Analytics
             </h5>
             <div class="points-padding display-inline">
               <ul>
-                <li>Jasmine, Jest, Karma, Cypress, Playwright</li>
-                <li>Google Analytics, Mixpanel</li>
+                <li data-skill-type="testing"><span data-field="skills">Jasmine, Jest, Karma, Cypress, Playwright</span>
+                </li>
+                <li data-skill-type="analytics"><span data-field="skills">Google Analytics, Mixpanel</span></li>
               </ul>
             </div>
           </div>
-          <div class="points-padding display-inline skills">
-            <h5 class="display-inline-box">
+          <div class="points-padding display-inline skills" data-skill-category="devops">
+            <h5 class="display-inline-box" data-field="skillCategory">
               <i class="fas fa-caret-right icon-padding"></i>DevOps & Cloud
             </h5>
             <div class="points-padding display-inline">
               <ul>
-                <li>AWS, Docker</li>
+                <li data-skill-type="cloud-devops"><span data-field="skills">AWS, Docker</span></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
       <!-- Education -->
-      <div class="default-padding">
-        <h4><i class="fas fa-pencil-alt icon-padding"></i>Education</h4>
-        <div class="default-padding">
-          <div>
-            <i class="fas fa-caret-right icon-padding"></i>Bachelor's of Technology |
-            <span class="company">SRM University</span>
-            <span class="float-right">2010 - 2014</span>
+      <div class="default-padding" id="education-section" data-section="education">
+        <h4 id="education-heading" data-field="educationHeading"><i class="fas fa-pencil-alt icon-padding"></i>Education
+        </h4>
+        <div class="default-padding" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <div class="education-item" data-field="education">
+            <i class="fas fa-caret-right icon-padding"></i><span itemprop="alumniOf" data-field="degree">Bachelor's of
+              Technology</span> |
+            <span class="company" itemprop="name" data-field="school">SRM University</span>
+            <span class="float-right" data-field="graduationDate">2010 - 2014</span>
           </div>
         </div>
       </div>
     </div>
     <div class="experience-reward-section">
       <!-- Header -->
-      <div class="header">
+      <div class="header" id="summary-section" data-section="summary">
         <div class="info">
-          <h4><i class="fas fa-file-alt icon-padding"></i>Summary</h4>
-          <div class="points-padding display-inline">
+          <h4 id="summary-heading" data-field="summaryHeading"><i class="fas fa-file-alt icon-padding"></i>Summary</h4>
+          <div class="points-padding display-inline" data-field="summary" itemprop="description">
             <ul>
-              <li>
-                Full Stack Developer with 10+ years of expertise in front-end development using Angular, React,
+              <li data-field="summaryPoint">
+                Full Stack Developer with 11+ years of expertise in front-end development using Angular, React,
                 Backbone, and Vue.
               </li>
-              <li>
+              <li data-field="summaryPoint">
                 Designed and implemented scalable Design Systems, ensuring consistent UI/UX across projects impacting
                 over 500K users.
               </li>
-              <li>
+              <li data-field="summaryPoint">
                 Developed and deployed micro front-end architectures, improving application performance by 40% and
                 reducing deployment
                 times by 20%.
               </li>
-              <li>
+              <li data-field="summaryPoint">
                 Resolved critical production issues with a 95% success rate, adhering to SLA timelines and minimizing
                 downtime.
               </li>
-              <li>
+              <li data-field="summaryPoint">
                 Mentored junior developers, boosting team productivity by 30% and fostering a collaborative,
                 high-performing team
                 environment.
               </li>
-              <li>
+              <li data-field="summaryPoint">
                 Established and enforced robust coding standards, eliminating regression issues and ensuring
                 maintainable software
                 solutions.
               </li>
-              <li>
+              <li data-field="summaryPoint">
                 Dedicated to continuous learning and leveraging cutting-edge technologies to deliver high-performing
                 applications.
               </li>
@@ -169,243 +208,280 @@
         </div>
       </div>
       <!-- Work Experience -->
-      <div class="default-padding">
-        <h4><i class="fas fa-briefcase icon-padding"></i>Work Experience</h4>
+      <div class="default-padding" id="experience-section" data-section="workExperience">
+        <h4 id="experience-heading" data-field="experienceHeading"><i class="fas fa-briefcase icon-padding"></i>Work
+          Experience</h4>
         <div class="flex-ex">
-          <div class="default-padding">
+          <div class="default-padding" itemscope itemtype="http://schema.org/WorkExperience"
+            data-field="workExperience">
             <div class="company-role">
-              <h5 class="display-inline-box">
-                <i class="fas fa-caret-right icon-padding"></i>Senior Full Stack Engineer |
-                <span class="company">Docusign</span>
+              <h5 class="display-inline-box" data-field="jobTitle">
+                <i class="fas fa-caret-right icon-padding"></i><span itemprop="jobTitle">Senior Full Stack
+                  Engineer</span> |
+                <span class="company" itemprop="hiringOrganization" data-field="company">Docusign</span>
               </h5>
-              <div>Feb, 2025 - Current</div>
+              <div data-field="employmentDates"><span itemprop="startDate">Feb, 2025</span> - <span
+                  itemprop="endDate">Current</span></div>
             </div>
-            <div class="points-padding display-inline">
+            <div class="points-padding display-inline" data-field="jobResponsibilities">
               <ul>
-                <li>
+                <li data-field="responsibility" itemprop="description">
                   Builing up a new product from scratch using React, Node.js, and AWS, focusing on performance,
                   scalability, and user experience.
                 </li>
-                <li>
+                <li data-field="responsibility" itemprop="description">
                   Contributed to the design and implementation of a micro frontend architecture, enhancing modularity
                   and
                   maintainability of the codebase.
                 </li>
-                <li>
+                <li data-field="responsibility" itemprop="description">
                   Identifying and resolving performance bottlenecks, optimizing resource utilization and reducing
                   response times.
                 </li>
-                <li>
+                <li data-field="responsibility" itemprop="description">
                   Integrated CI/CD pipelines with GitHub Actions, automating testing and deployment workflows.
                 </li>
               </ul>
             </div>
           </div>
-          <div class="default-padding">
+          <div class="default-padding" itemscope itemtype="http://schema.org/WorkExperience"
+            data-field="workExperience">
             <div class="company-role">
-              <h5 class="display-inline-box">
-                <i class="fas fa-caret-right icon-padding"></i>Senior Software Engineer |
-                <span class="company">Walmart Global Tech.</span>
+              <h5 class="display-inline-box" data-field="jobTitle">
+                <i class="fas fa-caret-right icon-padding"></i><span itemprop="jobTitle">Senior Software Engineer</span>
+                |
+                <span class="company" itemprop="hiringOrganization" data-field="company">Walmart Global Tech.</span>
               </h5>
-              <div>March, 2023 - Feb, 2025</div>
+              <div data-field="employmentDates"><span itemprop="startDate">March, 2023</span> - <span
+                  itemprop="endDate">Feb, 2025</span></div>
             </div>
-            <div class="points-padding display-inline">
+            <div class="points-padding display-inline" data-field="jobResponsibilities">
               <ul>
-                <li>
+                <li eld="responsibility" itemprop="description">
                   Architected and optimized Module Federation micro frontend architecture, reducing deployment times by
                   20%.
                 </li>
-                <li>
+                <li data-field="responsibility" itemprop="description">
                   Designed and implemented scalable React component libraries, enhancing code reusability and
                   standardization across
                   teams.
                 </li>
-                <li>
+                <li data-field="responsibility" itemprop="description">
                   Improved application performance by 40% through optimizations in React reconciliation, lazy loading,
                   and memory
                   management.
-
                 </li>
-                <li>
+                <li data-field="responsibility" itemprop="description">
                   Integrated CI/CD pipelines with GitHub Actions, automating testing and deployment workflows.
                 </li>
-                <li>
+                <li data-field="responsibility" itemprop="description">
                   Led efforts to enhance Playwright and Vitest test automation, increasing coverage and reducing
                   regression defects
                 </li>
-                <li>
+                <li data-field="responsibility" itemprop="description">
                   Collaborated with backend teams to define scalable GraphQL APIs, ensuring seamless data fetching
                   strategies.
                 </li>
-                <li>
+                <li data-field="responsibility" itemprop="description">
                   Upgraded Mixpanel tracking mechanisms, improving analytics accuracy by 50%.
                 </li>
-                <li>
+                <li data-field="responsibility" itemprop="description">
                   Acted as a technical mentor, leading architecture discussions and enforcing best practices.
                 </li>
               </ul>
             </div>
           </div>
-          <div class="default-padding">
-            <div class="company-role">
-              <h5 class="display-inline-box">
-                <i class="fas fa-caret-right icon-padding"></i>Lead Web Developer |
-                <span class="company">Verizon Data Services India Pvt. ltd. (Bluejeans by Verizon)</span>
-              </h5>
-              <div>Aug,2020 - March, 2023</div>
-            </div>
-            <div class="points-padding display-inline">
-              <ul>
-                <li>Designed and implemented a monorepo architecture using Nx, improving code sharing and reducing
-                  duplication.</li>
-                <li>Built a scalable UI component library using React and TypeScript, reducing frontend development
-                  effort by 60%.</li>
-                <li>Led frontend efforts for large-scale events applications, enabling 1M+ users with highly optimized
-                  web performance.</li>
-                <li>Optimized page load times by 30%, improving user experience and engagement.</li>
-                <li>Developed automated test strategies with Jest and Playwright, increasing unit test coverage to 94%.
-                </li>
-                <li>Improved application scalability, supporting 50K+ concurrent users through efficient API design.
-                </li>
-                <li>Built new Events products from concept to launch, achieving 60% user adoption and aligning with
-                  product goals.</li>
-                <li>Led the integration of WCAG-compliant accessibility features, increasing usability scores by 70%.
-                </li>
-                <li>
-                  Provided technical mentorship to junior developers, boosting team productivity by 30%.
-                </li>
-                <li>
-                  Developed and implemented Virtual Background and Background Blur features during peak COVID, enhancing
-                  video call
-                  engagement by 70% and improving user satisfaction scores by 40%.
-                </li>
-              </ul>
-            </div>
+        </div>
+        <div class="default-padding" itemscope itemtype="http://schema.org/WorkExperience" data-field="workExperience">
+          <div class="company-role">
+            <h5 class="display-inline-box" data-field="jobTitle">
+              <i class="fas fa-caret-right icon-padding"></i><span itemprop="jobTitle">Lead Web Developer</span> |
+              <span class="company" itemprop="hiringOrganization" data-field="company">Verizon Data Services India
+                Pvt. ltd. (Bluejeans by Verizon)</span>
+            </h5>
+            <div data-field="employmentDates"><span itemprop="startDate">Aug,2020</span> - <span
+                itemprop="endDate">March, 2023</span></div>
           </div>
-          <div class="default-padding">
-            <div class="company-role">
-              <h5 class="display-inline-box">
-                <i class="fas fa-caret-right icon-padding"></i>Senior Front End Web Developer |
-                <span class="company">Amadeus Labs Pvt. Ltd.</span>
-              </h5>
-              <div>October,2018 - Aug,2020</div>
-            </div>
-            <div class="points-padding display-inline">
-              <ul>
-                <li>
-                  Partnered with clients to define project scope, establish interaction guidelines, and set timelines,
-                  ensuring on-time
-                  delivery of 2 projects.
-                </li>
-                <li>
-                  Led the development of websites for prominent national clients, creating advanced UI frameworks and
-                  reusable design
-                  patterns that reduced prototyping time by 30%.
-
-                </li>
-                <li>Designed and developed visually appealing, highly efficient UI, increasing user satisfaction by 20%
-                  and reducing bounce
-                  rates by 10%.</li>
-                <li>
-                  Delivered effective, functional web designs customized for business needs, driving a 8% increase in
-                  client engagement.
-                </li>
-                <li>
-                  Developed detailed UI design specifications, streamlining cross-team collaboration and reducing
-                  development cycles by
-                  20%.
-
-                </li>
-                <li>
-                  Provided strategic guidance on UI best practices, improving Web Application performance metrics such
-                  as load time by
-                  12%.
-                </li>
-                <li>Resolved high-priority defects on aggressive timelines, achieving a 10% reduction in downtime and
-                  ensuring SLA
-                  compliance.</li>
-              </ul>
-            </div>
+          <div class="points-padding display-inline" data-field="jobResponsibilities">
+            <ul>
+              <li data-field="responsibility" itemprop="description">Designed and implemented a monorepo architecture
+                using Nx, improving code sharing and reducing
+                duplication.</li>
+              <li data-field="responsibility" itemprop="description">Built a scalable UI component library using React
+                and TypeScript, reducing frontend development
+                effort by 60%.</li>
+              <li data-field="responsibility" itemprop="description">Led frontend efforts for large-scale events
+                applications, enabling 1M+ users with highly optimized
+                web performance.</li>
+              <li data-field="responsibility" itemprop="description">Optimized page load times by 30%, improving user
+                experience and engagement.</li>
+              <li data-field="responsibility" itemprop="description">Developed automated test strategies with Jest and
+                Playwright, increasing unit test coverage to 94%.
+              </li>
+              <li data-field="responsibility" itemprop="description">Improved application scalability, supporting 50K+
+                concurrent users through efficient API design.
+              </li>
+              <li data-field="responsibility" itemprop="description">Built new Events products from concept to launch,
+                achieving 60% user adoption and aligning with
+                product goals.</li>
+              <li data-field="responsibility" itemprop="description">Led the integration of WCAG-compliant
+                accessibility features, increasing usability scores by 70%.
+              </li>
+              <li data-field="responsibility" itemprop="description">
+                Provided technical mentorship to junior developers, boosting team productivity by 30%.
+              </li>
+              <li data-field="responsibility" itemprop="description">
+                Developed and implemented Virtual Background and Background Blur features during peak COVID, enhancing
+                video call
+                engagement by 70% and improving user satisfaction scores by 40%.
+              </li>
+            </ul>
           </div>
-          <div class="default-padding">
-            <div class="company-role">
-              <h5 class="display-inline-box">
-                <i class="fas fa-caret-right icon-padding"></i>Front End Web Developer |
-                <span class="company">Lbrands</span>
-              </h5>
-              <div>April,2018 - October,2018</div>
-            </div>
-            <div class="points-padding display-inline">
-              <ul>
-                <li>Analyzed and enhanced the in-house framework, optimizing performance and reducing application load
-                  times by 4%.
-                </li>
-                <li>Revamped a Templating application using HTML Handlebars, streamlining submodule creation and
-                  improving development
-                  efficiency by 10%.
-                </li>
-                <li>Applied advanced refactoring techniques to simplify HTML markup, reducing JavaScript-induced HTML
-                  thrashing by 20% and
-                  improving page rendering speed.</li>
-              </ul>
-            </div>
+        </div>
+        <div class="default-padding" itemscope itemtype="http://schema.org/WorkExperience" data-field="workExperience">
+          <div class="company-role">
+            <h5 class="display-inline-box" data-field="jobTitle">
+              <i class="fas fa-caret-right icon-padding"></i><span itemprop="jobTitle">Senior Front End Web
+                Developer</span> |
+              <span class="company" itemprop="hiringOrganization" data-field="company">Amadeus Labs Pvt. Ltd.</span>
+            </h5>
+            <div data-field="employmentDates"><span itemprop="startDate">October,2018</span> - <span
+                itemprop="endDate">Aug,2020</span></div>
           </div>
-          <div class="default-padding">
-            <div class="company-role">
-              <h5 class="display-inline-box">
-                <i class="fas fa-caret-right icon-padding"></i>Business Technology Analyst |
-                <span class="company">Deloitte Consulting USI</span>
-              </h5>
-              <div>June,2016 - April,2018</div>
-            </div>
-            <div class="points-padding display-inline">
-              <ul>
-                <li>Developed 2 Single Page Applications mirroring the Guidewire portal, improving user experience and
-                  aligning features
-                  with client requirements.</li>
-                <li>Designed a universal JavaScript file for seamless Google Analytics integration, enabling
-                  comprehensive user interaction
-                  tracking and improving analytics accuracy by 80%.</li>
-                <li>Resolved all critical production issues as part of the High Priority Backlog Team, reducing downtime
-                  by 10% and
-                  ensuring SLA compliance.
-                </li>
-                <li>Analyzed client requirements to design and implement tailored functionalities, delivering solutions
-                  that boosted client
-                  satisfaction scores by 20%.
-                </li>
-                <li>Authored detailed documentation of coding and flow structures, streamlining team collaboration and
-                  expediting future
-                  development efforts.</li>
-              </ul>
-            </div>
+          <div class="points-padding display-inline" data-field="jobResponsibilities">
+            <ul>
+              <li data-field="responsibility" itemprop="description">
+                Partnered with clients to define project scope, establish interaction guidelines, and set timelines,
+                ensuring on-time
+                delivery of 2 projects.
+              </li>
+              <li data-field="responsibility" itemprop="description">
+                Led the development of websites for prominent national clients, creating advanced UI frameworks and
+                reusable design
+                patterns that reduced prototyping time by 30%.
+              </li>
+              <li data-field="responsibility" itemprop="description">Designed and developed visually appealing, highly
+                efficient UI, increasing user satisfaction by 20%
+                and reducing bounce
+                rates by 10%.</li>
+              <li data-field="responsibility" itemprop="description">
+                Delivered effective, functional web designs customized for business needs, driving a 8% increase in
+                client engagement.
+              </li>
+              <li data-field="responsibility" itemprop="description">
+                Developed detailed UI design specifications, streamlining cross-team collaboration and reducing
+                development cycles by
+                20%.
+              </li>
+              <li data-field="responsibility" itemprop="description">
+                Provided strategic guidance on UI best practices, improving Web Application performance metrics such
+                as load time by
+                12%.
+              </li>
+              <li>Resolved high-priority defects on aggressive timelines, achieving a 10% reduction in downtime and
+                ensuring SLA
+                compliance.</li>
+            </ul>
           </div>
-          <div class="default-padding">
-            <div class="company-role">
-              <h5 class="display-inline-box">
-                <i class="fas fa-caret-right icon-padding"></i>Project Engineer |
-                <span class="company">Wipro Technologies Pvt. Ltd.</span>
-              </h5>
-              <div>August,2014 - June,2016</div>
-            </div>
-            <div class="points-padding display-inline">
-              <ul>
-                <li>Addressed and resolved critical production issues as part of the High Priority Backlog Team,
-                  reducing downtime by 10%
-                  and enhancing system stability.</li>
-                <li>Analyzed client requirements and delivered tailored solutions, improving operational efficiency and
-                  client satisfaction
-                  by 10%.
-                </li>
-                <li>Authored comprehensive documentation and maintained updated reports on coding and flow structure,
-                  streamlining project
-                  management and expediting future development efforts.</li>
-              </ul>
-            </div>
+        </div>
+        <div class="default-padding" itemscope itemtype="http://schema.org/WorkExperience" data-field="workExperience">
+          <div class="company-role">
+            <h5 class="display-inline-box" data-field="jobTitle">
+              <i class="fas fa-caret-right icon-padding"></i><span itemprop="jobTitle">Front End Web Developer</span>
+              |
+              <span class="company" itemprop="hiringOrganization" data-field="company">Lbrands</span>
+            </h5>
+            <div data-field="employmentDates"><span itemprop="startDate">April,2018</span> - <span
+                itemprop="endDate">October,2018</span></div>
+          </div>
+          <div class="points-padding display-inline" data-field="jobResponsibilities">
+            <ul>
+              <li data-field="responsibility" itemprop="description">Analyzed and enhanced the in-house framework,
+                optimizing performance and reducing application load
+                times by 4%.
+              </li>
+              <li data-field="responsibility" itemprop="description">Revamped a Templating application using HTML
+                Handlebars, streamlining submodule creation and
+                improving development
+                efficiency by 10%.
+              </li>
+              <li data-field="responsibility" itemprop="description">Applied advanced refactoring techniques to simplify
+                HTML markup, reducing JavaScript-induced HTML
+                thrashing by 20% and
+                improving page rendering speed.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="default-padding" itemscope itemtype="http://schema.org/WorkExperience" data-field="workExperience">
+          <div class="company-role">
+            <h5 class="display-inline-box" data-field="jobTitle">
+              <i class="fas fa-caret-right icon-padding"></i><span itemprop="jobTitle">Business Technology
+                Analyst</span> |
+              <span class="company" itemprop="hiringOrganization" data-field="company">Deloitte Consulting USI</span>
+            </h5>
+            <div data-field="employmentDates"><span itemprop="startDate">June,2016</span> - <span
+                itemprop="endDate">April,2018</span></div>
+          </div>
+          <div class="points-padding display-inline" data-field="jobResponsibilities">
+            <ul>
+              <li data-field="responsibility" itemprop="description">Developed 2 Single Page Applications mirroring the
+                Guidewire portal, improving user experience and
+                aligning features
+                with client requirements.</li>
+              <li data-field="responsibility" itemprop="description">Designed a universal JavaScript file for seamless
+                Google Analytics integration, enabling
+                comprehensive user interaction
+                tracking and improving analytics accuracy by 80%.</li>
+              <li data-field="responsibility" itemprop="description">Resolved all critical production issues as part of
+                the High Priority Backlog Team, reducing downtime
+                by 10% and
+                ensuring SLA compliance.
+              </li>
+              <li data-field="responsibility" itemprop="description">Analyzed client requirements to design and
+                implement
+                tailored functionalities, delivering solutions
+                that boosted client
+                satisfaction scores by 20%.
+              </li>
+              <li data-field="responsibility" itemprop="description">Authored detailed documentation of coding and flow
+                structures, streamlining team collaboration and
+                expediting future
+                development efforts.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="default-padding" itemscope itemtype="http://schema.org/WorkExperience" data-field="workExperience">
+          <div class="company-role">
+            <h5 class="display-inline-box" data-field="jobTitle">
+              <i class="fas fa-caret-right icon-padding"></i><span itemprop="jobTitle">Project Engineer</span> |
+              <span class="company" itemprop="hiringOrganization" data-field="company">Wipro Technologies Pvt.
+                Ltd.</span>
+            </h5>
+            <div data-field="employmentDates"><span itemprop="startDate">August,2014</span> - <span
+                itemprop="endDate">June,2016</span></div>
+          </div>
+          <div class="points-padding display-inline" data-field="jobResponsibilities">
+            <ul>
+              <li data-field="responsibility" itemprop="description">Addressed and resolved critical production issues
+                as
+                part of the High Priority Backlog Team,
+                reducing downtime by 10%
+                and enhancing system stability.</li>
+              <li data-field="responsibility" itemprop="description">Analyzed client requirements and delivered tailored
+                solutions, improving operational efficiency and
+                client satisfaction
+                by 10%.
+              </li>
+              <li data-field="responsibility" itemprop="description">Authored comprehensive documentation and maintained
+                updated reports on coding and flow structure,
+                streamlining project
+                management and expediting future development efforts.</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </body>
 
