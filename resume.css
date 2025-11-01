@@ -139,3 +139,32 @@ a i {
   width: 76%;
   gap: 15px;
 }
+/* ATS Optimization Styles */
+.ats-keywords,
+.ats-skills-summary,
+.ats-summary,
+.ats-experience-keywords {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  white-space: nowrap !important;
+}
+
+/* Ensure ATS can still read the content */
+@media speech {
+  .ats-keywords,
+  .ats-skills-summary,
+  .ats-summary,
+  .ats-experience-keywords {
+    position: static !important;
+    left: auto !important;
+    width: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+  }
+}
